@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>NEWEZ</title>
+  </head>
+  <body
+    style="position: relative"
+    data-bs-spy="scroll"
+    data-bs-target="#navbar-example3"
+    data-bs-offset="10"
+    tabindex="0"
+  >
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+      id="navbar-example3"
+    >
+      <div class="container">
+        <a href="/" class="navbar-brand">
+          <img src="/img/logonewezp.png" class="img-fluid rounded-top" alt="" />
+          <!-- <i class="bi bi-bootstrap"></i>
+          Bootstrap -->
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="#inicio" class="nav-link" aria-current="page">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#quienes" class="nav-link">Quienes Somos</a>
+            </li>
+            <li class="nav-item">
+              <a href="/pages/encargo.html" class="nav-link">Pedidos</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#ayuda" class="nav-link">Ayuda</a>
+            </li>
+          </ul>
+          <form class="d-flex my-2 my-lg-0">
+            <input
+              class="form-control me-sm-2"
+              type="text"
+              placeholder="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+            <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button> -->
+            <button
+              type="button"
+              class="btn btn-light"
+              data-bs-toggle="modal"
+              data-bs-target="#ingreso"
+              data-bs-whatever="usuario@email.com"
+            >
+              Ingresar
+            </button>
+
+            <div
+              class="modal fade"
+              id="ingreso"
+              tabindex="-1"
+              aria-labelledby="ingresoLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="ingresoLabel">
+                      Bienvenido a NEWEZ
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label"
+                          >Usuario:</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="recipient-name"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="message-text" class="col-form-label"
+                          >Password:</label
+                        >
+                        <textarea class="form-control" id="message-text">
+*********</textarea
+                        >
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Cancelar
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Access
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- carrusel -->
+    <section id="inicio">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/img/kit33.png" class="d-block w-100 pt-5" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Oro 18K</h5>
+              <p>Temporada 2023 Verano</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/ring1.jpg" class="d-block w-100 pt-5" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Plata 925 y Swarovski</h5>
+              <p>Temporada 2023 Verano.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/img/boda2.jpg" class="d-block w-100 pt-5" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Oro y Plata</h5>
+              <p>Uniones de Compromiso.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/img/anillos.jpg" class="d-block w-100 pt-5" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Oro 18k</h5>
+              <p>Alianzas de Compromiso.</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- principal -->
+    <main class="bg-dark text-white py-5" id="quienes">
+      <div class="container">
+        <!--  <div class="text-center py-5 text-primary">
+          <i class="bi bi-star-fill h1"></i>
+          <i class="bi bi-star-fill h1"></i>
+          <i class="bi bi-star-fill h1"></i>
+        </div> -->
+        <h2 class="text-center display-4 mb-5">Quienes Somos</h2>
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-4">
+            <h5 class="text-center">Historia.</h5>
+            <hr />
+            <p class="parrafo">
+              La Joyería la formamos dos joyeras - diseñadoras Hemanas, Jennymar
+              Narvaez y Jennyffer Narvaez. Desde 2015 trabajamos haciendo piezas
+              únicas y pequeñas colecciones de joyería contemporánea. Hacemos
+              artesanalmente cada pieza con diferentes técnicas de construcción.
+              Según el diseño trabajamos directamente sobre el material,
+              cortando, soldando y puliendo. Otras veces trabajamos en cera los
+              originales y luego los pasamos a metal con la técnica de cera
+              perdida. Principalmente utilizamos plata 925, bronce bañado en oro
+              y por encargo hacemos piezas en oro 18 k como por ejemplo alianzas
+              etc. Algunas lineas especiales las hacemos en bronce crudo y cobre
+              e incorporamos esmaltes al horno y telas estampadas según la
+              pieza. Nos manejamos con libertad a la hora de elegir materiales
+              para trabajar. Todo lo hacemos desde nuestros bancos de joyero en
+              san Cristóbal, Venezuela. La Joyeria es un espacio de encuentro
+              entre el arte y el diseño. Entre nuestras piezas, se destacan los
+              objetos móviles que se acoplan al cuerpo de quienes los llevan,
+              incorporando valores al uso.
+            </p>
+
+            <button
+              type="button"
+              class="btn btn-outline-light mb-5 mb-lg-0"
+              data-bs-toggle="modal"
+              data-bs-target="#suscribete"
+              data-bs-whatever="usuario@email.com"
+            >
+              Suscríbete
+            </button>
+
+            <div
+              class="modal fade"
+              id="suscribete"
+              tabindex="-1"
+              aria-labelledby="suscribeteLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="suscribeteLabel">
+                      Bienvenido a NEWEZ
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label"
+                          >Escribe tu email:</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="recipient-name"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="message-text" class="col-form-label"
+                          >Password:</label
+                        >
+                        <textarea class="form-control" id="message-text">
+*********</textarea
+                        >
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ojo -->
+          </div>
+          <div class="rounded col-12 col-lg-8">
+            <img src="/img/handmade.jpg" alt="" class="img-fluid rounded" />
+          </div>
+        </div>
+        <h1 class="display-6 py-5">
+          "La única manera de hacer un gran trabajo, es amar lo que haces. Si no
+          lo has encontrado, sigue buscando. No te conformes!"
+        </h1>
+      </div>
+    </main>
+    <!-- Nuestros clientes -->
+
+    <section id="opiniones" class="p-5 bg-success">
+      <div class="container">
+        <div class="text-center h1 text-white py-2">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-tiktok"></i>
+          <i class="bi bi-instagram"></i>
+        </div>
+      <div class="container">
+        <h2 class="text-center text-white">Que dicen nuestros clientes</h2>
+        <p class="lead text-center text-white">
+          !Gracias por la confianza en nuestros productos!.
+        </p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="img/juan.jpg" alt="" class="rounded-circle mb-3" />
+                <h3 class="card-title mb-3">Juan Perez</h3>
+                <p class="card-text">
+                  Muy conforme con la calidad y relacion precio.
+                </p>
+                <i class="bi bi-star-fill mx-1"></i>
+                <i class="bi bi-star-fill mx-1"></i>
+                <i class="bi bi-star-fill mx-1"></i>
+                <i class="bi bi-star-fill mx-1"></i>
+                <i class="bi bi-star-fill mx-1"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="/img/nati.jpg" alt="" class="rounded-circle mb-3" />
+                <h3 class="card-title mb-3">Maria Perez</h3>
+                <p class="card-text">
+                  Mi madre adoro este obsequi  mill gracias.
+                </p>
+                <i class="bi bi-star-fill mx-1"></i>
+                <i class="bi bi-star-fill mx-1"></i>
+                <i class="bi bi-star-fill mx-1"></i>
+                <i class="bi bi-star-fill mx-1"></i>
+                <i class="bi bi-star-fill mx-1"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="/img/maria.jpg" alt="" class="rounded-circle mb-3" />
+                <h3 class="card-title mb-3">Carlos Gimenez</h3>
+                <p class="card-text">
+                  Buen trato y responsabilidad en el plazo de entrega.
+                </p>
+                <i class="bi bi-star-fill mx-1"></i>
+                <i class="bi bi-star-fill mx-1"></i>
+                <i class="bi bi-star-fill mx-1"></i>
+                <i class="bi bi-star-fill mx-1"></i>
+                <i class="bi bi-star-fill mx-1"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="/img/pedro.jpg" alt="" class="rounded-circle mb-3" />
+                <h3 class="card-title mb-3">Clara Martinez</h3>
+                <p class="card-text">
+                  Expectacular las alianzas para mi matrimonio!
+                </p>
+                <i class="bi bi-star-fill mx-1"></i>
+                <i class="bi bi-star-fill mx-1"></i>
+                <i class="bi bi-star-fill mx-1"></i>
+                <i class="bi bi-star-fill mx-1"></i>
+                <i class="bi bi-star-fill mx-1"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- comentarios -->
+
+    
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Footer -->
+    <footer
+      class="d-flex justify-content-between my-5 text-start flex-wrap"
+      id="ayuda"
+    >
+      <ul class="nav flex-column">
+        <li class="fw-bold nav-item">
+          <a href="listaDeProductos.html" class="nav-link text-dark"
+            >Productos</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-muted">Oro</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-muted">Plata</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-muted">Swarovski</a>
+        </li>
+      </ul>
+      <ul class="nav flex-column">
+        <li class="fw-bold nav-item">
+          <a href="" class="nav-link text-dark">Ayuda</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link text-muted">Como comprar</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link text-muted">Plazos de entrega</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link text-muted">Atención al cliente</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link text-muted">Promociones Bancarias</a>
+        </li>
+      </ul>
+      <ul class="nav flex-column">
+        <li class="fw-bold nav-item">
+          <a href="" class="nav-link text-dark">Empresa</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link text-muted">Sobre Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a href="blog.html" class="nav-link text-muted">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link text-muted">Vendé con nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link text-muted">Institucional</a>
+        </li>
+      </ul>
+      <ul class="nav flex-column">
+        <li class="fw-bold nav-item">
+          <a href="" class="nav-link text-dark">Términos y Condiciones</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link text-muted">Aviso legal</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link text-muted">Cambios y devoluciones</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link text-muted">Política de Privacidad</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link text-muted">Política de Cookies</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Pedidos</title>
+  </head>
+  <body
+    style="position: relative"
+    data-bs-spy="scroll"
+    data-bs-target="#navbar-example3"
+    data-bs-offset="10"
+    tabindex="0"
+  >
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+      id="navbar-example3"
+    >
+      <div class="container">
+        <a href="/" class="navbar-brand">
+          <img
+            src="../img/logonewezp.png"
+            class="img-fluid rounded-top"
+            alt=""
+          />
+          <!-- <i class="bi bi-bootstrap"></i>
+          Bootstrap -->
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link" aria-current="page"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link">Quienes Somos</a>
+            </li>
+            <li class="nav-item">
+              <a href="encargo.html" class="nav-link">Pedidos</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="/index.html" class="nav-link">Ayuda</a>
+            </li>
+          </ul>
+          <form class="d-flex my-2 my-lg-0">
+            <input
+              class="form-control me-sm-2"
+              type="text"
+              placeholder="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+            <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button> -->
+            <button
+              type="button"
+              class="btn btn-light"
+              data-bs-toggle="modal"
+              data-bs-target="#ingreso"
+              data-bs-whatever="usuario@email.com"
+            >
+              Ingresar
+            </button>
+
+            <div
+              class="modal fade"
+              id="ingreso"
+              tabindex="-1"
+              aria-labelledby="ingresoLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="ingresoLabel">
+                      Bienvenido a NEWEZ
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label"
+                          >Usuario:</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="recipient-name"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="message-text" class="col-form-label"
+                          >Password:</label
+                        >
+                        <textarea class="form-control" id="message-text">
+*********</textarea
+                        >
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Cancelar
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Access
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- inicio -->
+    <div class="container position-relative text-center">
+      <div class="position-relative text-center text-white mb-5">
+        <img src="../img/marca2.png" alt="Banner" class="w-100" />
+        <div
+          class="position-absolute top-50 start-50 translate-middle-x w-100 px-3"
+        >
+          <h1 class="display-4"></h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-lg-3 text-start">
+          <h3>Accesorios</h3>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a href="" class="nav-link text-muted">Alianzas</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link text-muted">Pulseras</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link text-muted">Cadenas</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link text-muted">Sarcillos</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col col-9 d-flex flex-wrap justify-content-between">
+          <div class="card m-2" style="width: 15rem">
+            <a href="">
+              <img
+                src="../img/cadena4.jpeg"
+                class="card-img-top"
+                height="300"
+                alt="Producto"
+              />
+            </a>
+            <div class="card-body">
+              <p class="card-text fw-bold">Cadena Fina + Dije</p>
+              <small class="text-secondary">US $25</small>
+            </div>
+          </div>
+          <div class="card m-2" style="width: 15rem">
+            <a href="">
+              <img
+                src="../img/cadena.jpeg"
+                alt=""
+                class="card-img-top"
+                height="300"
+                alt="Producto"
+              />
+            </a>
+            <div class="card-body">
+              <p class="card-text fw-bold">Cadena Tegido Medieval</p>
+              <small class="text-secondary">US $20</small>
+            </div>
+          </div>
+          <div class="card m-2" style="width: 15rem">
+            <a href="">
+              <img
+                src="../img/cadena2.jpeg"
+                alt=""
+                class="card-img-top"
+                height="300"
+                alt="Producto"
+              />
+            </a>
+            <div class="card-body">
+              <p class="card-text fw-bold">Cadenas C/U</p>
+              <small class="text-secondary">US $22</small>
+            </div>
+          </div>
+          <div class="card m-2" style="width: 15rem">
+            <a href="">
+              <img
+                src="../img/cadena3.jpeg"
+                alt=""
+                class="card-img-top"
+                height="300"
+                alt="Producto"
+              />
+            </a>
+            <div class="card-body">
+              <p class="card-text fw-bold">Cadena + Dije,Baño de Oro</p>
+              <small class="text-secondary">US $35</small>
+            </div>
+          </div>
+          <div class="card m-2" style="width: 15rem">
+            <a href="">
+              <img
+                src="../img/cadena5.jpeg"
+                alt=""
+                class="card-img-top"
+                height="300"
+                alt="Producto"
+              />
+            </a>
+            <div class="card-body">
+              <p class="card-text fw-bold">Cadena + Dije 18K, C/U</p>
+              <small class="text-secondary">US $50</small>
+            </div>
+          </div>
+          <div class="card m-2" style="width: 15rem">
+            <a href="">
+              <img
+                src="../img/sarcillos.jpeg"
+                alt=""
+                class="card-img-top"
+                height="300"
+                alt="Producto"
+              />
+            </a>
+            <div class="card-body">
+              <p class="card-text fw-bold">Sarcillos oro 18K</p>
+              <small class="text-secondary">US $15</small>
+            </div>
+          </div>
+          <div class="card m-2" style="width: 15rem">
+            <a href="">
+              <img
+                src="../img/sarcillosnewez.jpg"
+                alt=""
+                class="card-img-top"
+                height="300"
+                alt="Producto"
+              />
+            </a>
+            <div class="card-body">
+              <p class="card-text fw-bold">Sarcillo Oro 18K</p>
+              <small class="text-secondary">US $15</small>
+            </div>
+          </div>
+          <div class="card m-2" style="width: 15rem">
+            <a href="">
+              <img
+                src="../img/pulsera2.jpeg"
+                alt=""
+                class="card-img-top"
+                height="300"
+                alt="Producto"
+              />
+            </a>
+            <div class="card-body">
+              <p class="card-text fw-bold">Pulsera fantacia</p>
+              <small class="text-secondary">US $5</small>
+            </div>
+          </div>
+          <div class="card m-2" style="width: 15rem">
+            <a href="">
+              <img
+                src="../img/cadena7.jpeg"
+                alt=""
+                class="card-img-top"
+                height="300"
+                alt="Producto"
+              />
+            </a>
+            <div class="card-body">
+              <p class="card-text fw-bold">Cadena snake</p>
+              <small class="text-secondary">US $25</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Seccion newsletter -->
+      <section class="my-5 mx-auto py-5" style="max-width: 25rem">
+        <h2>¡Recibe Ofertas!</h2>
+        <form action="" class="d-flex my-4">
+          <input
+            type="search"
+            class="form-control me-2"
+            placeholder="Tu correo electrónico"
+          />
+          <button type="submit" class="btn btn-outline-dark">
+            Suscribirse
+          </button>
+        </form>
+      </section>
+      <footer class="d-flex justify-content-between my-5 text-start flex-wrap">
+        <ul class="nav flex-column">
+          <li class="fw-bold nav-item">
+            <a href="listaDeProductos.html" class="nav-link text-dark"
+              >Productos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-muted">Ropa</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-muted">Calzados</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-muted">Accesorios</a>
+          </li>
+        </ul>
+        <ul class="nav flex-column">
+          <li class="fw-bold nav-item">
+            <a href="" class="nav-link text-dark">Ayuda</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link text-muted">Como comprar</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link text-muted">Plazos de entrega</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link text-muted">Atención al cliente</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link text-muted">Promociones Bancarias</a>
+          </li>
+        </ul>
+        <ul class="nav flex-column">
+          <li class="fw-bold nav-item">
+            <a href="" class="nav-link text-dark">Empresa</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link text-muted">Sobre Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a href="blog.html" class="nav-link text-muted">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link text-muted">Vendé con nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link text-muted">Institucional</a>
+          </li>
+        </ul>
+        <ul class="nav flex-column">
+          <li class="fw-bold nav-item">
+            <a href="" class="nav-link text-dark">Términos y Condiciones</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link text-muted">Aviso legal</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link text-muted">Cambios y devoluciones</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link text-muted">Política de Privacidad</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link text-muted">Política de Cookies</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- fin de productos -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
